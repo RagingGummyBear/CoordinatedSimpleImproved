@@ -55,6 +55,7 @@
 		7DB0450F2282C75100595A38 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7DB045112282C76300595A38 /* TODOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOModel.swift; sourceTree = "<group>"; };
 		7DB045132282FBFB00595A38 /* PopupHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupHandler.swift; sourceTree = "<group>"; };
+		7DB045152283020C00595A38 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B524794D16920FF57BBB5A4F /* Pods-CoordinatedSimpleImproved.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatedSimpleImproved.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoordinatedSimpleImproved/Pods-CoordinatedSimpleImproved.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +91,7 @@
 		7DB044B42282BFAA00595A38 = {
 			isa = PBXGroup;
 			children = (
+				7DB045152283020C00595A38 /* README.md */,
 				7DB044BF2282BFAA00595A38 /* CoordinatedSimpleImproved */,
 				7DB044BE2282BFAA00595A38 /* Products */,
 				6902C92A387ACF9D06381E29 /* Pods */,
