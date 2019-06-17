@@ -82,4 +82,18 @@ class APIManager {
         return request
     }
     
+    // MARK - Other
+    func fetchUIImage(photo: PhotoModel) -> Promise<UIImage> {
+        return Promise { resolve in
+            DispatchQueue.global(qos: .background).async {
+                do {
+                    let data = try Data( contentsOf: URL(string: photo.url)!)
+                    resolve.fulfill(UIImage(data: data)!)
+                } catch let error {
+                    resolve.reject(error)
+                }
+            }
+        }
+    }
+    
 }

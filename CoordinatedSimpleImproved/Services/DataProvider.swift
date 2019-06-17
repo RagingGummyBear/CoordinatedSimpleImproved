@@ -77,4 +77,41 @@ public class DataProvider {
         }
     }
     
+    func prefetchUIImage(imageLink: String){
+        // 1. Save image
+    }
+    
+    func getUIImage(from photo: PhotoModel) -> Promise<UIImage> {
+        return Promise { resolve in
+            self.persistentStorage.hasPhoto(photo: photo).done({ (hasUIImg: Bool) in
+                if hasUIImg {
+                    self.persistentStorage.getPhoto(photo: photo).done({ (result: UIImage) in
+                        resolve.fulfill(result)
+                    }).catch({ (error: Error) in
+                        self.apiManager.fetchUIImage(photo: photo).done({ (image: UIImage) in
+                            self.persistentStorage.savePhoto(photo: photo, uiImage: image, uiImageThumbnail: image)
+                            resolve.fulfill(image)
+                        }).catch({ (error: Error) in
+                            resolve.reject(error)
+                        })
+                    })
+                } else {
+                    self.apiManager.fetchUIImage(photo: photo).done({ (image: UIImage) in
+                        self.persistentStorage.savePhoto(photo: photo, uiImage: image, uiImageThumbnail: image)
+                        resolve.fulfill(image)
+                    }).catch({ (error: Error) in
+                        resolve.reject(error)
+                    })
+                }
+            }) .catch({ (error: Error) in
+                self.apiManager.fetchUIImage(photo: photo).done({ (image: UIImage) in
+                    self.persistentStorage.savePhoto(photo: photo, uiImage: image, uiImageThumbnail: image)
+                    resolve.fulfill(image)
+                }).catch({ (error: Error) in
+                    resolve.reject(error)
+                })
+            })
+        }
+    }
+    
 }

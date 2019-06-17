@@ -27,6 +27,7 @@
 		7DB045102282C75100595A38 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB0450F2282C75100595A38 /* UserModel.swift */; };
 		7DB045122282C76300595A38 /* TODOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB045112282C76300595A38 /* TODOModel.swift */; };
 		7DB045142282FBFB00595A38 /* PopupHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB045132282FBFB00595A38 /* PopupHandler.swift */; };
+		7DCA9D46228442F800E423F5 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA9D45228442F800E423F5 /* PhotoModel.swift */; };
 		D65413AC58C2653BEC91460F /* Pods_CoordinatedSimpleImproved.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D5DBEF394669B2CE87C3DA /* Pods_CoordinatedSimpleImproved.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		7DB045112282C76300595A38 /* TODOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOModel.swift; sourceTree = "<group>"; };
 		7DB045132282FBFB00595A38 /* PopupHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupHandler.swift; sourceTree = "<group>"; };
 		7DB045152283020C00595A38 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7DCA9D45228442F800E423F5 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		B524794D16920FF57BBB5A4F /* Pods-CoordinatedSimpleImproved.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatedSimpleImproved.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoordinatedSimpleImproved/Pods-CoordinatedSimpleImproved.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 				7DB044EF2282C1CE00595A38 /* ExampleModel.swift */,
 				7DB0450F2282C75100595A38 /* UserModel.swift */,
 				7DB045112282C76300595A38 /* TODOModel.swift */,
+				7DCA9D45228442F800E423F5 /* PhotoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DCA9D46228442F800E423F5 /* PhotoModel.swift in Sources */,
 				7DB044FC2282C1CF00595A38 /* PersistentStorage.swift in Sources */,
 				7DB045122282C76300595A38 /* TODOModel.swift in Sources */,
 				7DB045142282FBFB00595A38 /* PopupHandler.swift in Sources */,

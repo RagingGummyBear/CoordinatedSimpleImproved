@@ -67,7 +67,6 @@ class UsersDisplayCoordinator:NSObject, Coordinator {
 
     // MARK: - Transition functions
     // These are the functions that can be called by the view controller as well
-
     func transitionBack(){
         self.navigationController.popViewController(animated: true)
     }
@@ -86,8 +85,6 @@ class UsersDisplayCoordinator:NSObject, Coordinator {
         child.selectedUser = selectedUser
         child.start()
     }
-
-    
     
     // MARK: - Logic functions
     // These are the functions that may be called by the viewcontroller. Example: Request for data, update data, etc.

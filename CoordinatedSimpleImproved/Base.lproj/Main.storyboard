@@ -32,20 +32,51 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIv-cS-TzT">
+                                <rect key="frame" x="16" y="438" width="382" height="92"/>
+                                <gestureRecognizers/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">By signing up you agree to our Terms &amp; Conditions and Priv@cy P0licy By signing up you agree to our T3rm5 &amp; C0nd1tions and Privacy Policy</string>
+                                        <attributes>
+                                            <font key="NSFont" size="19" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OoU-4T-KtL" secondAttribute="trailing" constant="16" id="66u-pP-V9Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uIv-cS-TzT" secondAttribute="trailing" constant="16" id="Afe-ga-J4k"/>
                             <constraint firstItem="Vgg-77-n8I" firstAttribute="top" secondItem="OoU-4T-KtL" secondAttribute="bottom" constant="52" id="BN8-x1-fHJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vgg-77-n8I" secondAttribute="trailing" constant="16" id="LCR-qk-mOt"/>
+                            <constraint firstItem="uIv-cS-TzT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="V1k-rQ-jgv"/>
                             <constraint firstItem="Vgg-77-n8I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aSS-nh-nHC"/>
                             <constraint firstItem="OoU-4T-KtL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="f6q-dA-y1o"/>
                             <constraint firstItem="OoU-4T-KtL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="nCA-lh-kBA"/>
+                            <constraint firstItem="uIv-cS-TzT" firstAttribute="top" secondItem="Vgg-77-n8I" secondAttribute="bottom" constant="74.5" id="tUN-Pe-h3L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bQS-0g-Hzp" appends="YES" id="aIW-SN-mws"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="multiLinkUILabel" destination="uIv-cS-TzT" id="W5y-QM-Dmr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bQS-0g-Hzp">
+                    <connections>
+                        <action selector="tapLabelWithGesture:" destination="BYZ-38-t0r" id="Nsw-hW-ouB"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="112" y="19"/>
         </scene>
